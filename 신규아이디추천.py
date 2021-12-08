@@ -26,7 +26,7 @@ def solution(new_id):
         answer=answer[:15]
         if answer[-1]=='.':
             answer=answer[:-1]
-    #7단계
-    if len(answer)< 3:
+    #7단계 : 아이디 길이가 2자 이하이면 마지막 문자를 반복해서 끝에 붙임
+    if len(answer) <= 2:
         answer+=answer[-1]
     return answer
