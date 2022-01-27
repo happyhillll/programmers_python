@@ -18,3 +18,4 @@ def solution(n):
 #다른 사람 풀이
 def solution(n): 
     return ('수박'*n) [:n]
+# []: 슬라이싱
