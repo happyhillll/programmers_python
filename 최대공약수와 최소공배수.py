@@ -1,9 +1,15 @@
-def solution(n1, n2):
-    if n1 < n2:
-        (n1, n2) = (n2, n1)
-    while n2 != 0:
-        (n1, n2) = (n2, n1 % n2)
-    return n1
+def solution(n, m):
+    answer = []
+
+    # 임의의 n, m 중 max, min의 값을 찾는다.
+    _max, _min = max(n, m), min(n, m)
+    # min의 값이 0보다 크면
+    while _min:
+        _max, _min = _min, _max%_min
+
+    answer = [_max, int(n * m / _max)]
+    
+    return answer
 
 #2개의 자연수 또는 정식의 최대공약수를 구하는 알고리즘
 # 호제법이란 말은 두 수가 서로(互) 상대방 수를 나누어(除)서 결국 원하는 수를 얻는 알고리즘을 나타낸다.
