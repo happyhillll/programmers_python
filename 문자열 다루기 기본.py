@@ -7,6 +7,4 @@ def solution(s):
     else:
         return False
     
-#다른 풀이
-def solution(s):
-    return s.isdigit() and len(s) in (4,6)
+#다른 풀이 def solution(s): return s.isdigit() and len(s) in (4,6)
