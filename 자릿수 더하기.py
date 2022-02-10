@@ -12,5 +12,4 @@ solution(1345)
 #다른 풀이
 def solution(n):
     N=[int(i) for i in str(n)]
-
     return sum(N)
